@@ -107,10 +107,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Illustrative model only — grounded in the hypothesis that longer fall
     // time increases lateral drift, not measured lab results.
     const model = {
-      2:  { dronePct: 10, spreadPx: 46,  spreadLabel: '~0.3–0.5 m (illustrative)' },
-      5:  { dronePct: 24, spreadPx: 74,  spreadLabel: '~0.6–0.9 m (illustrative)' },
-      10: { dronePct: 40, spreadPx: 110, spreadLabel: '~1.0–1.4 m (illustrative)' },
-      20: { dronePct: 58, spreadPx: 160, spreadLabel: '~1.6–2.2 m (illustrative)' },
+      2:  { dronePct: 58, spreadPx: 46,  spreadLabel: '~0.3–0.5 m (illustrative)' },
+      5:  { dronePct: 40, spreadPx: 74,  spreadLabel: '~0.6–0.9 m (illustrative)' },
+      10: { dronePct: 24, spreadPx: 110, spreadLabel: '~1.0–1.4 m (illustrative)' },
+      20: { dronePct: 10, spreadPx: 160, spreadLabel: '~1.6–2.2 m (illustrative)' },
     };
 
     const setHeight = (h) => {
