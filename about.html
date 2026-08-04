@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Project BioDrone</title>
+<meta name="description" content="Meet the team behind Project BioDrone, how we built it, why we started, and what's next.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand"><span class="dot"></span>BIO<span>DRONE</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#design">The design</a></li>
+    <li><a href="index.html#testing">Testing</a></li>
+    <li><a href="index.html#applications">Applications</a></li>
+    <li><a href="about.html" class="active">About us</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ PAGE HERO ============ -->
+<header class="page-hero">
+  <div class="topo">
+    <svg class="t1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" stroke="#8fe94e" fill="none" stroke-width="1">
+      <path d="M40 60 C 180 20, 320 140, 560 40" />
+      <path d="M20 130 C 190 90, 330 210, 580 110" />
+      <path d="M10 200 C 200 160, 340 280, 590 180" />
+    </svg>
+  </div>
+  <div class="container reveal">
+    <div class="eyebrow">The people behind it</div>
+    <h1 style="font-size:clamp(2.4rem,6vw,4.6rem);">About us</h1>
+    <p class="lede">Three students, one STEAM Centre brief, and a drone that grew a lot more ambitious than we first planned.</p>
+  </div>
+</header>
+
+<!-- ============ TEAM ============ -->
+<section id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">The team</div>
+      <h2>Who built BioDrone</h2>
+    </div>
+    <div class="team-grid reveal-stagger">
+      <div class="team-card">
+        <div class="avatar" style="background:var(--orange);">S</div>
+        <h3>Sid</h3>
+        <span class="role">Role — edit me</span>
+        <p>Add a couple of sentences here about what Sid focused on — e.g. flight systems, Arduino programming, or testing.</p>
+        <span class="edit-note">Placeholder — replace with a real bio</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--blue);">R</div>
+        <h3>Raaghav</h3>
+        <span class="role">Role — edit me</span>
+        <p>Add a couple of sentences here about what Raaghav focused on — e.g. 3D design in Fusion 360, or the hopper/funnel system.</p>
+        <span class="edit-note">Placeholder — replace with a real bio</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--purple);">R</div>
+        <h3>Ronan</h3>
+        <span class="role">Role — edit me</span>
+        <p>Add a couple of sentences here about what Ronan focused on — e.g. testing, risk assessment, or the poster and infographic design.</p>
+        <span class="edit-note">Placeholder — replace with a real bio</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section id="why">
+  <div class="container">
+    <div class="stack-wrap">
+      <div class="reveal">
+        <div class="eyebrow">Why we built this</div>
+        <h2>A cool build with a real job to do.</h2>
+        <p class="lede">We didn't want to build something that just looked impressive — we wanted it to actually be useful. Deforestation and bushfire recovery are problems where manual labour genuinely doesn't scale, and that felt like a real target worth designing for.</p>
+      </div>
+      <div class="reveal">
+        <div class="quote-block">Add your own words here — what made the three of you want to build this, and what surprised you along the way.</div>
+        <span class="edit-note">Placeholder quote — replace with your own reflection</span>
+        <p>BioDrone also became a way to combine everything the STEAM Centre brief was actually about: mechanical design in Fusion 360, electronics and Arduino programming, environmental science, and hands-on testing — all pointed at one physical object instead of staying separate subjects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUR PROCESS ============ -->
+<section id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">How we got here</div>
+      <h2>Our process</h2>
+      <p class="lede">From first sketch to a tested prototype — the timeline fills in as you scroll.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-fill"></div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Stage 01</div>
+        <h3>Research &amp; concept</h3>
+        <p>Landed on a seed-dropping drone after looking at real reforestation and delivery problems, and scoped the brief around an FPV platform with a custom payload system.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Stage 02</div>
+        <h3>3D design in Fusion 360</h3>
+        <p>Modelled the custom seed hopper and funnel system, iterating on a shape that would feed seeds reliably to a single release point.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Stage 03</div>
+        <h3>Electronics &amp; Arduino</h3>
+        <p>Wired the servo-controlled gate to an Arduino microcontroller and wrote the release logic — the first of several programmable features.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Stage 04</div>
+        <h3>Assembly</h3>
+        <p>Brought the carbon-fibre frame, motors, flight controller, FPV camera, and 3D-printed payload system together into one build.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Stage 05</div>
+        <h3>Drop testing</h3>
+        <p>Ran physical drop tests at different release heights to investigate how height affects seed spread on the ground.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Stage 06</div>
+        <h3>Poster, infographic &amp; this site</h3>
+        <p>Packaged the project for presentation — poster, infographic, and this write-up — ready to share and vote on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUTURE IMPROVEMENTS ============ -->
+<section id="future">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">What's next</div>
+      <h2>Future improvements</h2>
+      <p class="lede">The modular design was built to be extended — here's what we'd add next.</p>
+    </div>
+    <div class="future-grid reveal-stagger">
+      <div class="future-card" data-tag="Display">
+        <h3>LCD status display</h3>
+        <p>An onboard screen to show battery level, seed count, and release status without needing a separate device.</p>
+      </div>
+      <div class="future-card" data-tag="Precision">
+        <h3>GPS-guided flight paths</h3>
+        <p>Pre-programmed routes so seed release can follow a planned grid instead of relying purely on manual piloting.</p>
+      </div>
+      <div class="future-card" data-tag="Payload">
+        <h3>Larger, swappable payload</h3>
+        <p>A bigger hopper variant for heavier jobs — agricultural seed or small medical supply runs — without redesigning the frame.</p>
+      </div>
+      <div class="future-card" data-tag="Durability">
+        <h3>Weatherproofing</h3>
+        <p>Sealing the electronics and hopper so test flights aren't limited to dry, calm conditions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUTURE TIMELINE ============ -->
+<section id="roadmap">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Roadmap</div>
+      <h2>Where BioDrone goes from here</h2>
+      <p class="lede">A rough plan for the next iterations — timing is a placeholder, swap it for your real targets.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-fill"></div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Now</div>
+        <h3>Prototype v1 — complete</h3>
+        <p>Current build: working seed release mechanism, tested across four drop heights.</p>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Next</div>
+        <h3>Expanded field testing</h3>
+        <p>More trials across different seed types, wind conditions, and terrain to stress-test the spread data.</p>
+        <span class="edit-note">Placeholder timing — add a real target date</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Later</div>
+        <h3>LCD + GPS integration</h3>
+        <p>Add the onboard display and route-following so drops can be pre-planned rather than piloted live.</p>
+        <span class="edit-note">Placeholder timing — add a real target date</span>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-stage">Long-term</div>
+        <h3>Partner with a school or council</h3>
+        <p>Trial BioDrone on an actual reforestation site, ideally with a local council, landcare group, or the STEAM Centre's own grounds.</p>
+        <span class="edit-note">Placeholder — add a real partner if one exists</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a href="index.html" class="brand"><span class="dot"></span>BIO<span>DRONE</span></a>
+      <nav>
+        <a href="index.html#design">The design</a>
+        <a href="index.html#testing">Testing</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="about.html">About us</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>Project BioDrone — a STEAM Centre design project</span>
+      <span>Sid · Raaghav · Ronan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
