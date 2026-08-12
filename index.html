@@ -40,7 +40,7 @@
     <div class="eyebrow">STEAM Centre Design Project</div>
     <h1><span class="l1">Project</span><span class="l2">BioDrone</span></h1>
     <p class="tagline">Planting the future from the sky.</p>
-    <p class="lede">A programmable, seed-dropping drone built by Sid, Raaghav &amp; Ronan — combining custom 3D printing, Arduino coding and FPV drone mechanics to fight deforestation, one flight at a time.</p>
+    <p class="lede">A programmable, seed-dropping drone built by Sid, Raaghav &amp; Ronan — combining custom 3D printing and Arduino coding to fight deforestation, one flight at a time.</p>
     <div class="btn-row">
       <a href="#design" class="btn btn-solid">See the design</a>
       <a href="about.html" class="btn">Meet the team</a>
@@ -55,7 +55,7 @@
     <div class="section-head reveal">
       <div class="eyebrow">The problem</div>
       <h2>Planting trees by hand doesn't scale.</h2>
-      <p class="lede">Manual reforestation is slow, expensive, and often dangerous in the remote or fire-damaged terrain that needs it most. We built BioDrone to make seed distribution faster, safer, and cheap enough to actually use at scale.</p>
+      <p class="lede">Manual reforestation is slow, expensive, and often dangerous in the remote or fire-damaged terrain that needs it most. We built BioDrone to make seed distribution faster, safer, and cheap enough to actually use at scale. </p>
     </div>
     <div class="app-grid reveal-stagger">
       <div class="app-card">
@@ -83,7 +83,7 @@
     <div class="section-head reveal">
       <div class="eyebrow">The design</div>
       <h2>Four systems, one airframe.</h2>
-      <p class="lede">Built on an FPV drone platform with a carbon-fibre frame, BioDrone adds a custom 3D-printed hopper and funnel, released through a servo gate that's controlled entirely by an onboard Arduino.</p>
+      <p class="lede">Built on a drone platform, BioDrone adds a custom 3D-printed hopper and funnel, released through a servo gate that's controlled entirely by an onboard Arduino.</p>
     </div>
 
     <div class="stack-wrap">
@@ -115,14 +115,12 @@
       <p class="lede">Every part earns its weight — flight, control, and the seed-release system all have to work together without pushing the drone past its payload limit.</p>
     </div>
     <div class="component-grid reveal-stagger">
-      <div class="component-card"><span class="idx">FRAME</span><h4>Carbon-fibre frame</h4><p>Lightweight FPV chassis that supports and protects every other system.</p></div>
-      <div class="component-card"><span class="idx">LIFT</span><h4>Brushless motors &amp; props</h4><p>Four motors with three-blade, long-flight-time propellers for stable lift.</p></div>
-      <div class="component-card"><span class="idx">CONTROL</span><h4>Flight controller + ESC stack</h4><p>Keeps the drone stable in the air and translates pilot input into motor speed.</p></div>
-      <div class="component-card"><span class="idx">POWER</span><h4>6S LiPo battery</h4><p>Powers flight, electronics, and the seed-release mechanism in one system.</p></div>
-      <div class="component-card"><span class="idx">VISION</span><h4>FPV camera + transmitter</h4><p>Live video feed so the pilot can monitor the drone in real time.</p></div>
+      <div class="component-card"><span class="idx">CONTROL</span><h4>Accelerometer &amp; Connected to arduino board</h4><p>Sends the drone's acceleration data to arduino to chekc whether the drone is stable enough to drop payload.</p></div>
+      <div class="component-card"><span class="idx">MOTOR</span><h4>Flight controller + ESC stack</h4><p>Keeps the drone stable in the air and translates pilot input into motor speed.</p></div>
+      <div class="component-card"><span class="idx">POWER</span><h4>PowerBank</h4><p>Powerbank connected to arduino to power all electronics.</p></div>
       <div class="component-card"><span class="idx">LOGIC</span><h4>Arduino microcontroller</h4><p>Runs the programmable logic behind the seed-release system.</p></div>
-      <div class="component-card"><span class="idx">RELEASE</span><h4>Servo-gate mechanism</h4><p>Opens and closes the hopper outlet on command from the Arduino.</p></div>
-      <div class="component-card"><span class="idx">PAYLOAD</span><h4>3D-printed hopper &amp; funnel</h4><p>Custom-designed to store seeds in flight and funnel them to the release gate.</p></div>
+      <div class="component-card"><span class="idx">RELEASE</span><h4>Servo-gate mechanism</h4><p>Opens and closes the hole on the disk on command from the Arduino.</p></div>
+      <div class="component-card"><span class="idx">PAYLOAD</span><h4>3D-printed hopper &amp; funnel</h4><p>Custom-designed to store seeds in flight and funnel them to the release disk.</p></div>
     </div>
   </div>
 </section>
