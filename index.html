@@ -1,1 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project BioDrone — Planting the future from the sky</title>
+<meta name="description" content="A programmable seed-dropping drone built for reforestation, agriculture and emergency delivery. A STEAM Centre design project by Sid, Raaghav &amp; Ronan.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav class="site-nav">
+  <a href="index.html" class="brand"><span class="dot"></span>BIO<span>DRONE</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#design" class="active">The design</a></li>
+    <li><a href="index.html#testing">Testing</a></li>
+    <li><a href="index.html#applications">Applications</a></li>
+    <li><a href="about.html">About us</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="topo">
+    <svg class="t1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" stroke="#8fe94e" fill="none" stroke-width="1">
+      <path d="M40 60 C 180 20, 320 140, 560 40" />
+      <path d="M20 130 C 190 90, 330 210, 580 110" />
+      <path d="M10 200 C 200 160, 340 280, 590 180" />
+      <path d="M0 270 C 210 230, 350 350, 600 250" />
+      <path d="M30 340 C 220 300, 360 420, 570 320" />
+    </svg>
+    <svg class="t2" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" stroke="#f2f4ef" fill="none" stroke-width="1">
+      <path d="M0 40 C 150 90, 260 -10, 420 60 S 600 30, 600 30" />
+      <path d="M0 100 C 150 150, 260 50, 420 120 S 600 90, 600 90" />
+      <path d="M0 160 C 150 210, 260 110, 420 180 S 600 150, 600 150" />
+    </svg>
+  </div>
+  <div class="container hero-inner">
+    <div class="eyebrow">STEAM Centre Design Project</div>
+    <h1><span class="l1">Project</span><span class="l2">BioDrone</span></h1>
+    <p class="tagline">Planting the future from the sky.</p>
+    <p class="lede">A programmable, seed-dropping drone built by Sid, Raaghav &amp; Ronan — combining custom 3D printing, Arduino coding and FPV drone mechanics to fight deforestation, one flight at a time.</p>
+    <div class="btn-row">
+      <a href="#design" class="btn btn-solid">See the design</a>
+      <a href="about.html" class="btn">Meet the team</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>Scroll</div>
+</header>
+
+<!-- ============ WHY ============ -->
+<section id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">The problem</div>
+      <h2>Planting trees by hand doesn't scale.</h2>
+      <p class="lede">Manual reforestation is slow, expensive, and often dangerous in the remote or fire-damaged terrain that needs it most. We built BioDrone to make seed distribution faster, safer, and cheap enough to actually use at scale.</p>
+    </div>
+    <div class="app-grid reveal-stagger">
+      <div class="app-card">
+        <div class="num">01</div>
+        <h3>Bushfire recovery</h3>
+        <p>Burnt land is often unstable and hard to walk, making aerial seeding a safer way to kick-start regrowth.</p>
+      </div>
+      <div class="app-card">
+        <div class="num">02</div>
+        <h3>Remote terrain</h3>
+        <p>Steep, dense, or inaccessible land that would take a planting crew days can be covered by air in minutes.</p>
+      </div>
+      <div class="app-card">
+        <div class="num">03</div>
+        <h3>Cost &amp; labour</h3>
+        <p>One flexible, low-cost platform replaces a lot of manual hours — and the design scales up or down with the job.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE DESIGN ============ -->
+<section id="design">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">The design</div>
+      <h2>Four systems, one airframe.</h2>
+      <p class="lede">Built on an FPV drone platform with a carbon-fibre frame, BioDrone adds a custom 3D-printed hopper and funnel, released through a servo gate that's controlled entirely by an onboard Arduino.</p>
+    </div>
+
+    <div class="stack-wrap">
+      <div class="reveal">
+        <div class="stack">
+          <div class="stack-pill p-drone">Drone</div>
+          <div class="stack-connector"></div>
+          <div class="stack-pill p-arduino">Arduino housing</div>
+          <div class="stack-connector"></div>
+          <div class="stack-pill p-seed">Seed storage</div>
+          <div class="stack-connector"></div>
+          <div class="stack-pill p-motor">Motor housing</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p>The seed hopper sits above a funnel that channels seeds toward a single release point. A micro servo, driven by the Arduino, opens and closes the gate on command — so drop timing and quantity are fully programmable, not just gravity-fed.</p>
+        <p>Everything is designed modular on purpose: the hopper, funnel, and frame size can all be scaled up or down depending on the payload and the job — reforestation one week, a heavier agricultural payload the next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPONENTS ============ -->
+<section id="components">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Under the hood</div>
+      <h2>Key components</h2>
+      <p class="lede">Every part earns its weight — flight, control, and the seed-release system all have to work together without pushing the drone past its payload limit.</p>
+    </div>
+    <div class="component-grid reveal-stagger">
+      <div class="component-card"><span class="idx">FRAME</span><h4>Carbon-fibre frame</h4><p>Lightweight FPV chassis that supports and protects every other system.</p></div>
+      <div class="component-card"><span class="idx">LIFT</span><h4>Brushless motors &amp; props</h4><p>Four motors with three-blade, long-flight-time propellers for stable lift.</p></div>
+      <div class="component-card"><span class="idx">CONTROL</span><h4>Flight controller + ESC stack</h4><p>Keeps the drone stable in the air and translates pilot input into motor speed.</p></div>
+      <div class="component-card"><span class="idx">POWER</span><h4>6S LiPo battery</h4><p>Powers flight, electronics, and the seed-release mechanism in one system.</p></div>
+      <div class="component-card"><span class="idx">VISION</span><h4>FPV camera + transmitter</h4><p>Live video feed so the pilot can monitor the drone in real time.</p></div>
+      <div class="component-card"><span class="idx">LOGIC</span><h4>Arduino microcontroller</h4><p>Runs the programmable logic behind the seed-release system.</p></div>
+      <div class="component-card"><span class="idx">RELEASE</span><h4>Servo-gate mechanism</h4><p>Opens and closes the hopper outlet on command from the Arduino.</p></div>
+      <div class="component-card"><span class="idx">PAYLOAD</span><h4>3D-printed hopper &amp; funnel</h4><p>Custom-designed to store seeds in flight and funnel them to the release gate.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTING / SIMULATOR ============ -->
+<section id="testing">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Scientific testing focus</div>
+      <h2>Does release height change the spread?</h2>
+      <p class="lede">Our test plan investigates how the height a seed is released from affects how far it drifts before landing — the goal is to find the height that maximises coverage without wasting seed.</p>
+    </div>
+
+    <div class="sim reveal">
+      <div class="sim-stage">
+        <div class="sim-readout">
+          Release height<b class="readout-height">5 m</b>
+        </div>
+        <div class="sim-drone"><div class="body"></div>DRONE</div>
+        <div class="sim-seed"></div>
+        <div class="sim-ground"></div>
+        <div class="sim-spread"></div>
+      </div>
+      <div class="sim-controls">
+        <h3>Try a release height</h3>
+        <p>Based on our hypothesis: more fall time means more time for drag to carry the seed sideways, so spread should grow with height.</p>
+        <div class="height-buttons">
+          <button class="height-btn" data-height="2">2 m</button>
+          <button class="height-btn active" data-height="5">5 m</button>
+          <button class="height-btn" data-height="10">10 m</button>
+          <button class="height-btn" data-height="20">20 m</button>
+        </div>
+        <p style="margin-bottom:0.3rem;">Predicted ground spread</p>
+        <p class="text-fg readout-spread" style="font-family:var(--font-mono); font-size:1.1rem;">~0.6–0.9 m (illustrative)</p>
+        <div class="var-chips">
+          <span class="chip">50 seeds / trial</span>
+          <span class="chip">3 repeats per height</span>
+          <span class="chip">Same seed type</span>
+          <span class="chip">Same hopper &amp; funnel</span>
+          <span class="chip">Same pilot</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON ============ -->
+<section id="comparison">
+  <div class="container">
+    <div class="stack-wrap">
+      <div class="reveal">
+        <div class="eyebrow">Comparison</div>
+        <h2>Cheaper than the alternatives.</h2>
+        <p class="lede">BioDrone isn't reinventing agricultural or medical automation — it's aiming to make it dramatically more affordable, using an inexpensive FPV platform instead of specialised industrial equipment.</p>
+        <p>Like other automated seeding and delivery systems, it removes manual labour from the equation. Unlike most, its size, payload, and software are all easy to modify, so the same base platform can be re-purposed for a completely different job.</p>
+      </div>
+      <div class="reveal">
+        <div class="venn">
+          <div class="label">Automated delivery systems</div>
+          <div class="circle c1"></div>
+          <div class="circle c2"></div>
+        </div>
+        <p style="text-align:center; font-family:var(--font-mono); font-size:0.78rem;">Shared goal: remove manual labour · BioDrone's difference: low-cost, modular, student-built</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPLICATIONS ============ -->
+<section id="applications">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Extended applications</div>
+      <h2>One platform, several jobs.</h2>
+      <p class="lede">The same modular design that makes BioDrone good at reforestation makes it easy to adapt for other delivery problems.</p>
+    </div>
+    <div class="app-grid reveal-stagger">
+      <div class="app-card">
+        <div class="num">01</div>
+        <h3>Reforestation</h3>
+        <p>Distributing native seed across bushfire-affected or hard-to-reach land to kick-start regrowth.</p>
+      </div>
+      <div class="app-card">
+        <div class="num">02</div>
+        <h3>Medical delivery</h3>
+        <p>Adapted payload for carrying small emergency medical supplies to remote communities.</p>
+      </div>
+      <div class="app-card">
+        <div class="num">03</div>
+        <h3>Agriculture</h3>
+        <p>Targeted seed or fertiliser distribution across crop land, reducing labour and cost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RISK ============ -->
+<section id="risk">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Safety</div>
+      <h2>Risk assessment</h2>
+      <p class="lede">Every build and test session follows a fixed set of precautions. Tap a risk to see how we manage it.</p>
+    </div>
+    <div class="accordion reveal">
+      <div class="acc-item">
+        <button class="acc-trigger"><span>Spinning propellers</span><span class="plus">+</span></button>
+        <div class="acc-panel"><div class="acc-panel-inner"><span class="acc-tag">Physical</span><p>Cuts or injuries from spinning propellers. We keep clear of props at all times and only arm the drone inside a designated testing area.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger"><span>Flying drone</span><span class="plus">+</span></button>
+        <div class="acc-panel"><div class="acc-panel-inner"><span class="acc-tag">Physical</span><p>Collision with people, animals, or objects. Flights happen in a large open area, with a safe distance kept from bystanders.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger"><span>LiPo battery</span><span class="plus">+</span></button>
+        <div class="acc-panel"><div class="acc-panel-inner"><span class="acc-tag">Electrical</span><p>Fire, overheating, or battery damage. Batteries are stored in a fireproof bag and inspected before every use.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger"><span>Soldering equipment</span><span class="plus">+</span></button>
+        <div class="acc-panel"><div class="acc-panel-inner"><span class="acc-tag">Physical</span><p>Burns from a hot soldering iron. Safety equipment is worn and all soldering is done under supervision.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger"><span>Electronics &amp; wiring</span><span class="plus">+</span></button>
+        <div class="acc-panel"><div class="acc-panel-inner"><span class="acc-tag">Electrical</span><p>Short circuits or electrical damage. Wiring is checked before power-on, with a smoke stopper used during testing.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger"><span>Small seeds &amp; 3D-printed parts</span><span class="plus">+</span></button>
+        <div class="acc-panel"><div class="acc-panel-inner"><span class="acc-tag">Site</span><p>Slipping hazards and sharp edges. Seeds are cleaned up after every test, and printed parts are inspected and smoothed beforehand.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="cta">
+  <div class="container">
+    <div class="panel reveal" style="padding:3.5rem; text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Get involved</div>
+      <h2>Don't just talk about a greener future.</h2>
+      <p class="lede" style="margin:0 auto 1.5rem;">Help us build it. Read about how the team put BioDrone together, why we started, and what's next.</p>
+      <a href="about.html" class="btn btn-solid">Meet the team</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <a href="index.html" class="brand"><span class="dot"></span>BIO<span>DRONE</span></a>
+      <nav>
+        <a href="index.html#design">The design</a>
+        <a href="index.html#testing">Testing</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="about.html">About us</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>Project BioDrone — a STEAM Centre design project</span>
+      <span>Sid · Raaghav · Ronan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
